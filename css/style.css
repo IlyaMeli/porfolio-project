@@ -443,6 +443,7 @@ p {
   h1{
     
     font-size: 8rem;
+  
   }
 
   .contact-title, .projects-title,.my-skills-title{
@@ -466,9 +467,7 @@ p {
     height: 32rem;
     width: 32rem;
   }
-  .btn{
-    font-size:2rem;
-  }
+
   
   .main-wrapper {
     
