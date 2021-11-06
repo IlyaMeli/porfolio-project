@@ -12,8 +12,8 @@
 }
 
 html {
-  /* font-size: 10px; */
-  font-size: 0.5vw;
+  font-size: 10px;
+  /* font-size: 0.5vw; */
   scroll-behavior: smooth;
 }
 
@@ -135,7 +135,11 @@ p {
   line-height: 5rem;
   border-radius: 3rem;
   font-size: 1.5rem;
-  transition: 0.3s;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  /* transition: 3s; */
 }
 
 .--button-content-wrapper .--btn-download {
@@ -152,14 +156,14 @@ p {
     rgba(255, 255, 255, 1) 51%
   );
 }
-#skills {
-  height: 100vh;
-}
+/* #skills {
+} */
 
 .skills-container {
   /* border: solid 2px red; */
+  height: 100vh;
   display: flex;
-  height: 100%;
+  /* height: 100%; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -209,27 +213,31 @@ p {
 }
 .front-end-wrapper .--front-end-icon .--icon-4 {
   background: url("/assets/icons/redux-logo.png") center/cover no-repeat;
+  background-size: 80%;
 }
 .front-end-wrapper .--front-end-icon .--icon-5 {
   background: url("/assets/icons/mongo-logo.png") center/cover no-repeat;
 }
 .front-end-wrapper .--front-end-icon .--icon-6 {
   background: url("/assets/icons/node-logo.png") center/cover no-repeat;
+  background-size: 90%;
 }
 /*#endregion Background Images*/
 
 .front-end-wrapper .--front-end-icon .--fe-icon:hover:after {
-  opacity: 0.8;
+  opacity: 0.6;
+  transform: scale(1.1);
 }
 
 .front-end-wrapper .--front-end-icon .--fe-icon::after {
   content: attr(data-icon);
   font-size: 2.5em;
-  left: 0;
+  /* left: 0; */
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
+  font-weight: 600;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -237,4 +245,68 @@ p {
   border-radius: 50%;
   opacity: 0;
   transition: 0.8s;
+}
+
+/* button animation feature */
+
+.btn::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: var(--primary-color);
+  border-radius: 50px;
+  transition: 0.7s;
+
+  transform: translatex(-180%);
+  z-index: -1;
+}
+.btn:hover::after {
+  content: "";
+  transform: translatex(50%);
+  position: absolute;
+  opacity: 1;
+}
+
+.projects-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* border: solid 3px red; */
+}
+
+.--projects-wrapper {
+  /* padding: 1rem 0; */
+  width: 100%;
+  height: 40%;
+  display: flex;
+  padding: 3rem;
+  gap: 3rem;
+}
+
+.--projects-card {
+  height: 100%;
+  /* border: solid 2px blue; */
+  width: 25%;
+}
+
+.--projects-wrapper .card1 {
+  background: url("../assets/img/img_5terre.jpg") center/cover no-repeat;
+}
+.--projects-wrapper .card2 {
+  background: url("../assets/img/img_forest.jpg") center/cover no-repeat;
+}
+.--projects-wrapper .card3 {
+  background: url("../assets/img/img_lights.jpg") center/cover no-repeat;
+}
+.--projects-wrapper .card4 {
+  background: url("../assets/img/img_mountains.jpg") center/cover no-repeat;
+}
+
+.projects-title {
+  color: var(--dark-color);
+  padding: 10rem 0;
 }
