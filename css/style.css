@@ -13,7 +13,6 @@
 
 html {
   font-size: 10px;
-  /* font-size: 0.5vw; */
   scroll-behavior: smooth;
 }
 body {
@@ -25,8 +24,7 @@ body {
 
   padding: 0 17vw;
   background: linear-gradient(180deg, rgba(255,255,255,1) 60%, var(--primary-color)  100%);
-  /* background: linear-gradient(180deg, rgba(255,255,255,1) 80%, black  100%); */
-
+  
 }
 .home {
   height: 100vh;
@@ -79,7 +77,6 @@ ul a {
   flex-direction: column;
   justify-content: center;
   width: 60%;
-  /* transition: 0.3s; */
   animation: main-content 1.5s ease-in-out;
 }
 
@@ -168,7 +165,6 @@ p {
 .skills-container {
   height: 100vh;
   display: flex;
-  /* height: 100%; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -184,7 +180,6 @@ p {
   height: 2px;
   width: 30%;
   background-color: var(--primary-color);
-  /* margin-top: 20px; */
 }
 
 .front-end-wrapper {
@@ -236,7 +231,6 @@ p {
 .front-end-wrapper .--front-end-icon .--fe-icon::after {
   content: attr(data-icon);
   font-size: 2.5em;
-  /* left: 0; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -266,7 +260,7 @@ p {
   border-radius: 50px;
   transition: 0.7s;
 
-  transform: translatex(-180%);
+  transform: translatex(-190%);
   z-index: -1;
 }
 .btn:hover::after {
@@ -288,7 +282,7 @@ p {
 }
 
 .--projects-wrapper {
-  /* padding: 1rem 0; */
+
   width: 100%;
   height: 100%;
   display: flex;
@@ -466,12 +460,14 @@ p {
     
   }
   p{
-    /* font-size: 1.5rem; */
     align-self: center;
   }
   .--hero-img{
-    height: 35rem;
-    width: 35rem;
+    height: 32rem;
+    width: 32rem;
+  }
+  .btn{
+    font-size:2rem;
   }
   
   .main-wrapper {
@@ -480,7 +476,6 @@ p {
     
   }
   .hero-container{
-    /* border: solid 2px red; */
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-around;
