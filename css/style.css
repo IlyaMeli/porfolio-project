@@ -431,3 +431,59 @@ p {
   padding: 3rem 0;
 
 }
+
+
+@media (max-width:700px) {
+  
+  /* Navbar display none */
+
+  html{
+    font-size: 7px;
+  }
+
+  .navbar{
+    display:none;
+  }
+
+  h1{
+    
+    font-size: 5rem;
+  }
+  .titles{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  h2{
+    font-size: 4rem;
+    
+  }
+  p{
+    /* font-size: 1.5rem; */
+    align-self: center;
+  }
+  .--hero-img{
+    height: 35rem;
+    width: 35rem;
+  }
+  
+  .main-wrapper {
+    
+    padding: 0;
+    
+  }
+  .hero-container{
+    /* border: solid 2px red; */
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    gap: 2rem;
+    text-align: center;
+    width:100%;
+    height: 100%;
+  
+  }
+
+}
