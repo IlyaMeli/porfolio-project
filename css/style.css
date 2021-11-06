@@ -448,7 +448,11 @@ p {
 
   h1{
     
-    font-size: 5rem;
+    font-size: 8rem;
+  }
+
+  .contact-title, .projects-title,.my-skills-title{
+    font-size: 9rem;
   }
   .titles{
     display:flex;
@@ -458,7 +462,7 @@ p {
     
   }
   h2{
-    font-size: 4rem;
+    font-size: 7rem;
     
   }
   p{
