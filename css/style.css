@@ -14,6 +14,8 @@
 html {
   font-size: 10px;
   scroll-behavior: smooth;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -21,7 +23,7 @@ body {
 }
 
 .main-wrapper {
-  padding: 0 17vw;
+  padding: 0 30rem;
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 1) 60%,
@@ -413,7 +415,7 @@ p {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    border: solid 2px red;
+    /* border: solid 2px red; */
   }
 
   .front-end-wrapper .--front-end-icon {
@@ -478,7 +480,7 @@ p {
     position: relative;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 375px) {
   html {
     font-size: 7px;
   }
@@ -488,5 +490,8 @@ p {
   .projects-title,
   .my-skills-title {
     font-size: 5rem;
+  }
+  .front-end-wrapper {
+    height: 70%;
   }
 }
