@@ -413,6 +413,7 @@ p {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    border: solid 2px red;
   }
 
   .front-end-wrapper .--front-end-icon {
@@ -475,5 +476,17 @@ p {
   .--projects-card {
     width: 90%;
     position: relative;
+  }
+}
+@media (max-width: 300px) {
+  html {
+    font-size: 7px;
+  }
+
+  h2,
+  .contact-title,
+  .projects-title,
+  .my-skills-title {
+    font-size: 5rem;
   }
 }
