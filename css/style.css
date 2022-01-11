@@ -331,8 +331,11 @@ p {
   opacity: 0.8;
 }
 
-.--projects-wrapper .card1 {
+/* .--projects-wrapper .card1 {
   background: url("../assets/img/img_5terre.jpg") center/cover no-repeat;
+} */
+.--projects-wrapper .card1 {
+  background: url("../assets/img/meditate.jpg") center/cover no-repeat;
 }
 .--projects-wrapper .card2 {
   background: url("../assets/img/img_forest.jpg") center/cover no-repeat;
@@ -347,6 +350,9 @@ p {
 .projects-title {
   color: var(--dark-color);
   padding: 5rem 0;
+}
+.projects-a {
+  display: block;
 }
 
 /* contact-styling */
