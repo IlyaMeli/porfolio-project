@@ -400,8 +400,9 @@ p {
   color: inherit;
 }
 .--icon-wrapper:hover {
-  background: white;
-  color: var(--dark-color);
+  background: rgb(189, 189, 189);
+  /* color: var(--dark-color);
+  color: red; */
   opacity: 1;
 }
 .--social-icons {
